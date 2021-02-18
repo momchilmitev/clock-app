@@ -1,19 +1,28 @@
 import './App.scss';
+import { useState } from 'react';
 import Quote from '../Quote/Quote';
 import Time from '../Time/Time';
 import Button from '../Button/Button';
 
 function App() {
+  const [open, setOpen] = useState(false);
+
+  const openClass = open ? 'app' : 'app app--open';
+
+  const toggleInfo = () => {
+    setOpen(!open);
+  };
+
   return (
-    <div className="app">
-      <section className="clock__container">
+    <div className={openClass}>
+      <section className="clock">
         <Quote />
         <section className="clock__action">
           <Time />
-          <Button />
+          <Button toggleInfo={toggleInfo} />
         </section>
       </section>
-      <section className="info__container">
+      <section className="info">
         <section className="info__section--left">
           <article className="info__detail">
             <p className="info__title">current timezone</p>

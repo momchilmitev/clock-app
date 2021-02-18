@@ -1,0 +1,73 @@
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../../assets/images/mobile/bg-image-daytime.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  &--open {
+    .clock {
+      height: 60%;
+      justify-content: flex-end;
+    }
+
+    .btn--primary > span {
+      transform: rotate(360deg);
+    }
+
+    .quote {
+      display: none;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      height: 40%;
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(40.7742px);
+      color: var(--black);
+      padding: 48px 26px 0 26px;
+
+      &__detail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 28px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      &__value {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 31px 26px 0 26px;
+}
+
+.info {
+  display: none;
+}

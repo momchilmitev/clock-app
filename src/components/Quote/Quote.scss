@@ -1,0 +1,24 @@
+.quote {
+  &__content {
+    width: 90%;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  &__action {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.btn--load {
+  display: inline-block;
+  background-image: url('../../assets/icons/icon-refresh.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 17px;
+  height: 17px;
+}

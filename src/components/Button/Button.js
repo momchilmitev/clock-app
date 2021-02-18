@@ -1,7 +1,11 @@
 import './Button.scss';
 
-const Button = () => {
-  return <button className="btn--primary">More</button>;
+const Button = ({ toggleInfo }) => {
+  return (
+    <button onClick={toggleInfo} className="btn--primary">
+      More <span></span>
+    </button>
+  );
 };
 
 export default Button;

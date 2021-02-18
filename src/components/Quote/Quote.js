@@ -2,7 +2,7 @@ import './Quote.scss';
 
 const Quote = () => {
   return (
-    <section className="quote__container">
+    <section className="quote">
       <div className="quote__action">
         <p className="quote__content">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
@@ -10,7 +10,7 @@ const Quote = () => {
           quo officia minima error qui vitae consectetur dolorum. Error nisi
           temporibus suscipit nemo.
         </p>
-        <button className="btn--load">load</button>
+        <span className="btn--load"></span>
       </div>
       <p className="quote__author">Momchil Mitev</p>
     </section>

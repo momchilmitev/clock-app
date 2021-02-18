@@ -1,0 +1,46 @@
+.time {
+  &__value {
+    margin: 16px 0;
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: -2.5px;
+  }
+
+  &__type {
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 26px;
+  }
+
+  &__title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    &--second {
+      display: none;
+    }
+  }
+
+  &__location {
+    margin: 0;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+}

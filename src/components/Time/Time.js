@@ -1,10 +1,13 @@
 import './Time.scss';
+import sun from '../../assets/icons/icon-sun.svg';
+import moon from '../../assets/icons/icon-moon.svg';
 
 const Time = () => {
   return (
-    <section className="time__container">
+    <section className="time">
       <p className="time__title">
-        <span className="time__icon">icon</span>Good morning
+        <img src={sun} className="time__icon" alt="time icon" />
+        Good morning
         <span className="time__title--second">, it's currently</span>
       </p>
       <h1 className="time__value">
