@@ -58,6 +58,21 @@
       }
     }
   }
+
+  &--night {
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('../../assets/images/mobile/bg-image-nighttime.jpg');
+
+    .info {
+      color: var(--white);
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(40.7742px);
+    }
+  }
 }
 
 .clock {

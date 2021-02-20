@@ -6,15 +6,17 @@ import Button from '../Button/Button';
 
 function App() {
   const [open, setOpen] = useState(false);
+  const [night, setNight] = useState(true);
 
   const openClass = open ? 'app app--open' : 'app';
+  const nightClass = night ? 'app--night' : '';
 
   const toggleInfo = () => {
     setOpen(!open);
   };
 
   return (
-    <div className={openClass}>
+    <div className={`${openClass} ${nightClass}`}>
       <section className="clock">
         <Quote />
         <section className="clock__action">
