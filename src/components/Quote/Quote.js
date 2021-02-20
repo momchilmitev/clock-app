@@ -1,18 +1,16 @@
 import './Quote.scss';
+import useQoute from '../../hooks/useQuote';
 
 const Quote = () => {
+  const [quote, getQoute] = useQoute();
+
   return (
     <section className="quote">
       <div className="quote__action">
-        <p className="quote__content">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
-          adipisci? Consequuntur dignissimos, expedita, et labore numquam totam
-          quo officia minima error qui vitae consectetur dolorum. Error nisi
-          temporibus suscipit nemo.
-        </p>
-        <span className="btn--load"></span>
+        <p className="quote__content">{quote ? quote.content : null}</p>
+        <span className="btn--load" onClick={getQoute}></span>
       </div>
-      <p className="quote__author">Momchil Mitev</p>
+      <p className="quote__author">{quote ? quote.author : null}</p>
     </section>
   );
 };

@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 
 function App() {
   const [open, setOpen] = useState(false);
-  const [night, setNight] = useState(true);
+  const [night, setNight] = useState(false);
 
   const openClass = open ? 'app app--open' : 'app';
   const nightClass = night ? 'app--night' : '';
