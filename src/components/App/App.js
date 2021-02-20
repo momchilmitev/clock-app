@@ -7,7 +7,7 @@ import Button from '../Button/Button';
 function App() {
   const [open, setOpen] = useState(false);
 
-  const openClass = open ? 'app' : 'app app--open';
+  const openClass = open ? 'app app--open' : 'app';
 
   const toggleInfo = () => {
     setOpen(!open);

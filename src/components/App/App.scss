@@ -14,7 +14,7 @@
 
   &--open {
     .clock {
-      height: 60%;
+      height: 60vh;
       justify-content: flex-end;
     }
 
@@ -29,7 +29,7 @@
     .info {
       display: flex;
       flex-direction: column;
-      height: 40%;
+      height: 40vh;
       background: rgba(255, 255, 255, 0.75);
       backdrop-filter: blur(40.7742px);
       color: var(--black);
@@ -69,5 +69,6 @@
 }
 
 .info {
-  display: none;
+  height: 0vh;
+  transition: 0.1s;
 }
