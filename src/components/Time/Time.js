@@ -2,11 +2,11 @@ import './Time.scss';
 import sun from '../../assets/icons/icon-sun.svg';
 import moon from '../../assets/icons/icon-moon.svg';
 
-const Time = () => {
+const Time = ({ night }) => {
   return (
     <section className="time">
       <p className="time__title">
-        <img src={sun} className="time__icon" alt="time icon" />
+        <img src={night ? moon : sun} className="time__icon" alt="time icon" />
         Good morning
         <span className="time__title--second">, it's currently</span>
       </p>

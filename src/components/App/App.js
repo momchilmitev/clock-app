@@ -20,7 +20,7 @@ function App() {
       <section className="clock">
         <Quote />
         <section className="clock__action">
-          <Time />
+          <Time night={night} />
           <Button toggleInfo={toggleInfo} />
         </section>
       </section>
