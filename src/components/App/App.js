@@ -13,6 +13,10 @@ function App() {
     `https://api.ipdata.co/?api-key=${process.env.REACT_APP_IP_DATA_API_KEY}`
   );
 
+  if (!data) {
+    return <div>Loading ...</div>;
+  }
+
   const openClass = open ? 'app app--open' : 'app';
   const nightClass = night ? 'app--night' : '';
 
