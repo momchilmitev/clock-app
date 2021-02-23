@@ -35,7 +35,7 @@ function App() {
             countryCode={data.country_code}
             timeType={data.time_zone.abbr}
           />
-          <Button toggleInfo={toggleInfo} />
+          <Button toggleInfo={toggleInfo} open={open} />
         </section>
       </section>
       <section className="info">

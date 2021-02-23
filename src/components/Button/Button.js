@@ -1,9 +1,9 @@
 import './Button.scss';
 
-const Button = ({ toggleInfo }) => {
+const Button = ({ toggleInfo, open }) => {
   return (
     <button onClick={toggleInfo} className="btn--primary">
-      More <span></span>
+      {open ? 'less' : 'more'} <span></span>
     </button>
   );
 };
