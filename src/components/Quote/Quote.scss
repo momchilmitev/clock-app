@@ -22,3 +22,19 @@
   width: 17px;
   height: 17px;
 }
+
+@media (min-width: 768px) {
+  .quote {
+    &__content {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__author {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}

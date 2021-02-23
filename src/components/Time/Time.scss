@@ -7,10 +7,12 @@
   }
 
   &__type {
+    margin-left: 15px;
     font-size: 15px;
     line-height: 28px;
     font-weight: 400;
     text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
   &__icon {
@@ -42,5 +44,36 @@
     line-height: 28px;
     letter-spacing: 3px;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  .time {
+    &__title {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 3.6px;
+
+      &--second {
+        display: initial;
+      }
+    }
+
+    &__value {
+      font-size: 175px;
+      line-height: 175px;
+      letter-spacing: -4.375px;
+    }
+
+    &__type {
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 28px;
+    }
+
+    &__location {
+      font-size: 18px;
+      letter-spacing: 3.6px;
+    }
   }
 }

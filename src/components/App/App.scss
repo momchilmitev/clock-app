@@ -1,6 +1,7 @@
 .app {
   height: 100vh;
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   background-image: linear-gradient(
       to left,
@@ -86,4 +87,61 @@
 .info {
   height: 0vh;
   transition: 0.1s;
+}
+
+@media (min-width: 768px) {
+  .app {
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('../../assets/images/tablet/bg-image-daytime.jpg');
+
+    &--night {
+      background-image: linear-gradient(
+          to left,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url('../../assets/images/tablet/bg-image-nighttime.jpg');
+    }
+
+    &--open {
+      .info {
+        box-sizing: border-box;
+        flex-direction: row;
+        padding: 120px 165px 120px 65px;
+
+        &__section {
+          &--left {
+            margin-right: 80px;
+          }
+        }
+
+        &__detail {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 48px;
+        }
+
+        &__title {
+          margin: 0;
+          font-size: 13px;
+          line-height: 28px;
+          letter-spacing: 2.6px;
+        }
+
+        &__value {
+          margin: 0;
+          font-size: 40px;
+          line-height: 48px;
+        }
+      }
+    }
+  }
+
+  .clock {
+    padding: 80px 130px 65px 65px;
+  }
 }

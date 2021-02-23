@@ -14,6 +14,7 @@ const Time = ({ setNight, city, countryCode, timeType }) => {
       setGreeting('afternoon');
     } else {
       setGreeting('evening');
+      setNight(true);
     }
   };
 

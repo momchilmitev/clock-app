@@ -30,3 +30,20 @@
     transform: rotate(180deg);
   }
 }
+
+@media (min-width: 768px) {
+  .btn--primary {
+    margin-top: 80px;
+    width: 146px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 6px;
+    justify-content: space-around;
+
+    & > span {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
