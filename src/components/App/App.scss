@@ -86,6 +86,7 @@
 
 .info {
   height: 0vh;
+  overflow: hidden;
   transition: 0.1s;
 }
 
@@ -143,5 +144,53 @@
 
   .clock {
     padding: 80px 130px 65px 65px;
+  }
+}
+
+@media (min-width: 992px) {
+  .app {
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('../../assets/images/desktop/bg-image-daytime.jpg');
+
+    &--night {
+      background-image: linear-gradient(
+          to left,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url('../../assets/images/desktop/bg-image-nighttime.jpg');
+    }
+
+    &--open {
+      .info {
+        padding: 74px 0px 74px 165px;
+
+        &__section {
+          &--left {
+            padding-right: 147px;
+            margin-right: 94px;
+            border-right: 1px solid rgba($color: #ffffff, $alpha: 0.25);
+          }
+        }
+
+        &__value {
+          font-size: 56px;
+          line-height: 68px;
+        }
+      }
+    }
+  }
+
+  .clock {
+    padding: 56px 165px 98px 165px;
+
+    &__action {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
